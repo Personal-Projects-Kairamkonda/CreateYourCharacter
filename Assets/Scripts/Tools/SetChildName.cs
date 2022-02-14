@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+//using TMPro;
 
 public class SetChildName : MonoBehaviour
 {
@@ -12,7 +12,7 @@ public class SetChildName : MonoBehaviour
     private void OnValidate()
     {
         this.gameObject.transform.GetChild(0).name = this.gameObject.name+typeText;
-        this.gameObject.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text=this.gameObject.name;
+        //this.gameObject.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text=this.gameObject.name;
         this.gameObject.transform.GetChild(1).name = this.gameObject.name + typeButton;
     }
 }
