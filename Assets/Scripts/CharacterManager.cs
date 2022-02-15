@@ -56,8 +56,6 @@ public class CharacterManager : MonoBehaviour
 
     void Start()
     {
-        Debug.Log(characterData.bodyData[0].Name);
-
         customizePanel.SetActive(true);
         characterPanel.SetActive(false);
 
