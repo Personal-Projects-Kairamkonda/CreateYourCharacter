@@ -5694,7 +5694,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4581243167713040871, guid: e5733e9e736d95a42842d6072785e314, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4581243167713040871, guid: e5733e9e736d95a42842d6072785e314, type: 3}
       propertyPath: m_AnchorMin.x
@@ -5702,7 +5702,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4581243167713040871, guid: e5733e9e736d95a42842d6072785e314, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4581243167713040871, guid: e5733e9e736d95a42842d6072785e314, type: 3}
       propertyPath: m_SizeDelta.x
@@ -5742,11 +5742,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4581243167713040871, guid: e5733e9e736d95a42842d6072785e314, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 75.72
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4581243167713040871, guid: e5733e9e736d95a42842d6072785e314, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -271.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4581243167713040871, guid: e5733e9e736d95a42842d6072785e314, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5766,7 +5766,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4581243167713040888, guid: e5733e9e736d95a42842d6072785e314, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4581243167767460704, guid: e5733e9e736d95a42842d6072785e314, type: 3}
       propertyPath: m_Name
@@ -5774,6 +5774,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4581243167767460718, guid: e5733e9e736d95a42842d6072785e314, type: 3}
       propertyPath: m_text
+      value: Shoes
+      objectReference: {fileID: 0}
+    - target: {fileID: 5112075574392516700, guid: e5733e9e736d95a42842d6072785e314, type: 3}
+      propertyPath: m_Text
       value: Shoes
       objectReference: {fileID: 0}
     m_RemovedComponents: []
