@@ -15,6 +15,7 @@ public class CharacterManager : MonoBehaviour
     public GameObject animatePanel;
     public GameObject buttonsLayout;
 
+    public Transform characterTransform;
     public AudioClip[] audios;
 
     private Button[] buttons;
@@ -42,7 +43,6 @@ public class CharacterManager : MonoBehaviour
     /// </summary>
     [SerializeField]
     public Dictionary<string,AudioClip> characterSounds = new Dictionary<string, AudioClip>();
-
 
     private void Awake()
     {
