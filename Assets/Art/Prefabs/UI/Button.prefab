@@ -35,7 +35,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000076293945, y: 0}
+  m_AnchoredPosition: {x: 33.92, y: 0}
   m_SizeDelta: {x: 33.82, y: 30}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &2549930992029787312
@@ -377,7 +377,7 @@ TextMesh:
   m_OffsetZ: 0
   m_CharacterSize: 5
   m_LineSpacing: 1
-  m_Anchor: 5
+  m_Anchor: 4
   m_Alignment: 1
   m_TabSize: 4
   m_FontSize: 70
