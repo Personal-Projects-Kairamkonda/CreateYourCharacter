@@ -20,6 +20,8 @@ public class CharacterManager : MonoBehaviour
 
     private Button[] buttons;
 
+    public Button randomButton;
+
     #region bodyObjects
 
     public CharacterObject chestObject= new CharacterObject();
@@ -70,10 +72,17 @@ public class CharacterManager : MonoBehaviour
 
         buttons=buttonsLayout.GetComponentsInChildren<Button>();
 
+        randomButton.onClick.AddListener(RandomCharacter);
+
         foreach (var item in buttons)
         {
             item.onClick.AddListener(PlayAudio);
         }
+    }
+
+    void RandomCharacter()
+    {
+        chestObject.image.sprite = chestObject.sprites[Random.Range(0, chestObject.sprites.Count)];
     }
 
     /// <summary>
