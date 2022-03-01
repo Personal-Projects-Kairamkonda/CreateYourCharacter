@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MeshGenerator : MonoBehaviour
 {
@@ -15,18 +16,22 @@ public class MeshGenerator : MonoBehaviour
     void Start()
     {
         mesh= new Mesh();
+        mesh.name = "Terrain";
         this.GetComponent<MeshFilter>().mesh = mesh;
+
+        this.GetComponent<MeshRenderer>().material.color = Color.red;
 
         StartCoroutine(CreateShape());
     }
 
-    void Update()
+    private void Update()
     {
         UpdateMesh();
     }
 
     IEnumerator CreateShape()
     {
+        Debug.Log("Create Shape");
         vertices = new Vector3[(xSize + 1) * (zSize + 1)];
 
         for (int i=0 ,z = 0; z <= zSize; z++)
@@ -58,7 +63,7 @@ public class MeshGenerator : MonoBehaviour
                 vert++;
                 tris += 6;
 
-                yield return new WaitForSeconds(.01f);
+                yield return new WaitForSeconds(.001f);
             }
             vert++;
         }
