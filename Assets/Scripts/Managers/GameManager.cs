@@ -6,12 +6,26 @@ public class GameManager : MonoBehaviour
 {
     public GameObject meshGenerator;
 
+    private void Start()
+    {
+        CreateMesh();
+    }
+
     public void Regenerate()
+    {
+        CreateMesh();
+        DestroyMesh();
+    }
+
+    public void CreateMesh()
+    {
+        GameObject temp = Instantiate(meshGenerator, transform.position, Quaternion.identity, this.transform);
+    }
+
+    private void DestroyMesh()
     {
         GameObject previousObj = this.transform.GetChild(0).gameObject;
         Destroy(previousObj);
-
-        GameObject temp = Instantiate(meshGenerator, transform.position, Quaternion.identity, this.transform);
     }
 
 
